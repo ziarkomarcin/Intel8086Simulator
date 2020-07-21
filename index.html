@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="script/script.js"></script>
+    <title>Intel 8086 Simulator</title>
+</head>
+<body>
+    <div class="header">
+        <h3>Intel 8086 Simulator</h3>
+    </div>
+                <div class="left"><hr/><hr/>
+                    <h1>Arithmetic Registers</h1>
+                        <div class="reg">AX <sup>(Accumulator)</sup></div>
+                            <div class="regX">
+                                    AH
+                                    <input type="number" id="ah" placeholder="0">
+                                    AL
+                                    <input type="number" id="al" placeholder="0">
+                            </div>
+                            
+                        <div class="reg">BX <sup>(Base)</sup></div>
+                            <div class="regX">
+                                    BH
+                                    <input type="number" id="bh" placeholder="0">
+                                    BL
+                                    <input type="number" id="bl" placeholder="0">
+                            </div>
+
+                        <div class="reg">CX <sup>(Counter)</sup></div>
+                            <div class="regX">
+                                    CH
+                                    <input type="number" id="ch" placeholder="0">
+                                    CL
+                                    <input type="number" id="cl" placeholder="0">
+                            </div>
+
+                        <div class="reg">DX <sup>(Data)</sup></div>
+                            <div class="regX">
+                                    DH
+                                    <input type="number" id="dh" placeholder="0">
+                                    DL
+                                    <input type="number" id="dl" placeholder="0">
+                            </div>
+
+                        <div class="reg">FROM</div>
+                            <div class="regX">
+                                <select id="from">
+                                    <option value="ah" selected>AH</option>
+                                    <option value="al">AL</option>
+                                    <option value="bh">BH</option>
+                                    <option value="bl">BL</option>
+                                    <option value="ch">CH</option>
+                                    <option value="cl">CL</option>
+                                    <option value="dh">DH</option>
+                                    <option value="dl">DL</option>
+                                </select>
+                            </div>
+                        <div class="reg">TO</div>
+                            <div class="regX">
+                                <select id="to">
+                                    <option value="ah">AH</option>
+                                    <option value="al" selected>AL</option>
+                                    <option value="bh">BH</option>
+                                    <option value="bl">BL</option>
+                                    <option value="ch">CH</option>
+                                    <option value="cl">CL</option>
+                                    <option value="dh">DH</option>
+                                    <option value="dl">DL</option>
+                                </select>
+                            </div>
+                </div>
+
+                <div class="right"><hr/><hr/>
+                    <h1>Orders</h1>
+                        <div class="action" onclick="mov();">MOV</div>
+                        <div class="action" onclick="xchg();">XCHG</div>
+                        <div class="action" onclick="wyczysc();">CLEAR</div>
+                </div>
+    <div class="footer">
+        <h4>Ziarko Marcin, album: 12552, lab14 niestacjonarne</h4>
+    </div>
+</body>
+</html>
