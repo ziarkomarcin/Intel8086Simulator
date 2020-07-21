@@ -25,7 +25,8 @@ html, body {
 }
 
 .reg {
-    height: 10%;
+    height: auto;
+    min-height: 10%;
     width: 20%;
     font-weight: bold;
     text-align: center;
@@ -33,7 +34,8 @@ html, body {
 }
 
 .regX {
-    height: 10%;
+    height: auto;
+    min-height: 10%;
     width: 80%;
     float: left;
 }
