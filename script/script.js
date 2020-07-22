@@ -10,26 +10,31 @@ function wyczysc()
 function mov() 
 {
   var a = document.getElementById("from");
-  var axx = a.options[a.selectedIndex].value;
-
+  var axx = a.options[a.selectedIndex].value; //pobranie wartości (odpowiedniego rejestru)
+                                              //z diva "from"
   var b = document.getElementById("to");
-  var bxx = b.options[b.selectedIndex].value;
+  var bxx = b.options[b.selectedIndex].value; //pobranie wartości (odpowiedniego rejestru)
+                                              //z diva "to"
 
   var exe = document.getElementById(axx).value;
   document.getElementById(axx).value = "";
-  document.getElementById(bxx).value = exe;
+  document.getElementById(bxx).value = exe;   //nadpisanie wprowadzonej wartości
+                                              //do odpowiedniego rejestru;
+                                              //"wyczyszczenie" poprzedniego rejestru
 }
 
 function xchg() 
 {
   var a = document.getElementById("from");
-  var axx = a.options[a.selectedIndex].value;
+  var axx = a.options[a.selectedIndex].value; //pobranie wartości (odpowiedniego rejestru)
+                                              //z diva "from"
 
   var b = document.getElementById("to");
-  var bxx = b.options[b.selectedIndex].value;
+  var bxx = b.options[b.selectedIndex].value; //pobranie wartości (odpowiedniego rejestru)
+                                              //z diva "to"
 
-  var exe = document.getElementById(axx).value;
-  var exed = document.getElementById(bxx).value;
-  document.getElementById(axx).value = exed;
-  document.getElementById(bxx).value = exe;
+  var exe = document.getElementById(axx).value;   //pobranie wartości ze zmiennej axx
+  var exed = document.getElementById(bxx).value;  //pobranie wartości ze zmiennej bxx
+  document.getElementById(axx).value = exed;      //wartość ze zmiennej bxx wprowadzona do axx
+  document.getElementById(bxx).value = exe;       //wartość ze zmiennej axx wprowadzona do bxx
 }
